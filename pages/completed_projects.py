@@ -44,7 +44,7 @@ else:
                     "Link to File": link_to_file,
                     "sector": sector,
                 }
-                projects = projects.append(new_project, ignore_index=True)
+                projects = projects._append(new_project, ignore_index=True)
 
                 # Save updated projects
                 save_projects(projects)

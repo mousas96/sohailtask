@@ -2,4 +2,3 @@ Pandas== 2.2.2
 streamlit==1.33.0
 DateTime==5.5
 hashlib-tst==0.1.0
-Python 3.7.16 

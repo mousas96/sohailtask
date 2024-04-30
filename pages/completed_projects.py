@@ -42,7 +42,7 @@ else:
                     "Project Name": project_name,
                     "Date of Completion": str(completion_date),
                     "Link to File": link_to_file,
-                    "Category": category,
+                    "sector": sector,
                 }
                 projects = projects.append(new_project, ignore_index=True)
 

@@ -145,7 +145,7 @@ else:
                             "Task History": [f"Created at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"],
                             "Last Modified By": st.session_state['username']
                         }
-                        tasks = tasks.append(new_row, ignore_index=True)
+                        tasks = tasks._append(new_row, ignore_index=True)
                     # Save updated tasks
                     save_tasks(tasks)
 #remove

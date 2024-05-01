@@ -7,7 +7,7 @@ def load_projects():
     try:
         projects = pd.read_csv('completed_projects.csv')
     except FileNotFoundError:
-        projects = pd.DataFrame(columns=["Project Name", "Date of Completion", "Link to File", "Category"])
+        projects = pd.DataFrame(columns=["Project Name", "Date of Completion", "Link to File", "sector"])
     return projects
 
 # Function to save projects to a CSV file

@@ -75,7 +75,10 @@ if 'logged_in' not in st.session_state:
 # Check login status
 if not st.session_state['logged_in']:
     # Display logo
-    st.image("sohail.png", width=150)
+    cols = st.columns([1, 4, 1])
+    with cols[1]:
+        st.image("sohail.png", width=300)
+        # Show login screen
     with st.form("login_form"):
         username = st.text_input("Username")
         password = st.text_input("Password", type='password')

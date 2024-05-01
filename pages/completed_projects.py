@@ -5,14 +5,14 @@ from datetime import datetime
 # Function to load existing projects
 def load_projects():
     try:
-        projects = pd.read_csv('completed_projects.csv')
+        projects = pd.read_csv('completed_project.csv')
     except FileNotFoundError:
         projects = pd.DataFrame(columns=["Project Name", "Date of Completion", "Link to File", "sector"])
     return projects
 
 # Function to save projects to a CSV file
 def save_projects(projects):
-    projects.to_csv('completed_projects.csv', index=False)
+    projects.to_csv('completed_project.csv', index=False)
 
 # Initialize Streamlit app
 st.set_page_config(layout="wide")

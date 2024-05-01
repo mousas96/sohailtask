@@ -62,7 +62,7 @@ def style_importance(val):
 # Initialize Streamlit app
 st.set_page_config(layout="wide")
 # Display logo
-st.image("sohail.png", width=300)
+st.image("sohail.png", width=600)
 st.title("Task Tracker")
 
 # Load users and tasks

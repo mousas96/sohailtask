@@ -11,8 +11,7 @@ def load_users():
     except FileNotFoundError:
         users = pd.DataFrame(columns=["Username", "Password"])
     return users
-# Display logo
-st.image("sohail.png", width=300)
+
 # Function to load existing tasks
 def load_tasks():
     try:
@@ -62,6 +61,8 @@ def style_importance(val):
 
 # Initialize Streamlit app
 st.set_page_config(layout="wide")
+# Display logo
+st.image("sohail.png", width=300)
 st.title("Task Tracker")
 
 # Load users and tasks

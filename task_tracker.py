@@ -65,7 +65,7 @@ st.set_page_config(layout="wide")
 st.markdown(
     """
     <div style="text-align: center;">
-        <img src="sohailtask/sohail.png" alt="Logo" width="300">
+        <img src="https://app.box.com/s/g1ttcyk6kmaq7a7cicptemjsjwcnfjcg" alt="Logo" width="300">
     </div>
     """, unsafe_allow_html=True
 )

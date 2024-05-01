@@ -61,8 +61,16 @@ def style_importance(val):
 
 # Initialize Streamlit app
 st.set_page_config(layout="wide")
+# Display logo with centered HTML and CSS
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="sohail.png" alt="Logo" width="300">
+    </div>
+    """, unsafe_allow_html=True
+)
 # Display logo
-st.image("sohail.png", width=600)
+#st.image("sohail.png", width=300,)
 st.title("Task Tracker")
 
 # Load users and tasks

@@ -2,7 +2,8 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 import hashlib
-
+# Display logo
+st.image("sohail.png", width=300)
 # Function to load existing users
 def load_users():
     try:
@@ -66,8 +67,7 @@ st.title("Task Tracker")
 # Load users and tasks
 users = load_users()
 tasks = load_tasks()
-# Display logo
-st.image("sohail.png", width=300)
+
 # Session state setup for logged-in status
 if 'logged_in' not in st.session_state:
     st.session_state['logged_in'] = False

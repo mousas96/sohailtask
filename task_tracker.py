@@ -2,8 +2,7 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 import hashlib
-# Display logo
-st.image("sohail.png", width=300)
+
 # Function to load existing users
 def load_users():
     try:
@@ -12,7 +11,8 @@ def load_users():
     except FileNotFoundError:
         users = pd.DataFrame(columns=["Username", "Password"])
     return users
-
+# Display logo
+st.image("sohail.png", width=300)
 # Function to load existing tasks
 def load_tasks():
     try:
